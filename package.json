@@ -21,7 +21,8 @@
     "chai": "~1.9.1",
     "grunt-mocha-test": "~0.10.2",
     "grunt": "~0.4.4",
-    "sinon": "^1.9.1"
+    "sinon": "^1.9.1",
+    "grunt-contrib-jshint": "~0.10.0"
   },
   "author": "Matt Ward",
   "license": "BSD-2-Clause",
