@@ -39,11 +39,19 @@ dynoToCsv.configure({
 #### Or Configure with existing AWS Instance from your application
 
 ```
+/**
+ * This assumes you've already configured AWS somewhere in your app.
+ * Now you're just going to use, instances of AWS services.
+ */
+
+var dynamoDb = new AWS.DynamoDB();
+var s3       = new AWS.S3();
+
 dynoToCsv.configure({
-                        dynamodbInstance: 'instanceof AWS.DynamoDB',
+                        dynamodbInstance: dynamoDb,
                         storage: {
                             s3: {
-                                instance: 'instanceof AWS.S3',
+                                instance: s3,
                                 bucket: 'name-of-bucket-to-save-to'
                                 // If bucket doesn't exist, it will be created with ACL: authenticated-read 
                             }
