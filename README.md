@@ -59,6 +59,7 @@ dynoToCsv.configure({
                     });
 ```
 
+### Just pass in a legitimate DynamoDB query and you're done.
 ```
 /**
  * Converts dynamodb query result to csv format, callback with an s3 signedURL
