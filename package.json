@@ -1,6 +1,6 @@
 {
-  "name": "node-dyno-to-csv",
-  "version": "0.1.2",
+  "name": "dyno-to-csv",
+  "version": "0.1.3",
   "description": "A node module to export AWS DynamoDB query results to CSV",
   "main": "index.js",
   "scripts": {
