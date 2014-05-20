@@ -40,6 +40,7 @@ dynoToCsv.configure({
 
 
 ### Just pass in a legitimate DynamoDB query and you're done.
+### At the moment, your query must contain the property: AttributesToGet: [], I'm working on eliminating this requirement.
 ```
 /**
  * Converts dynamodb query result to csv format, callback with an s3 signedURL
